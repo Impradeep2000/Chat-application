@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form class="form-username" id="form">
+        <h1>Join Chatroom</h1>
+        <h2>Enter Username</h2>
+        <input type="text" placeholder="Username" id="username-input"/>
+        <button id="join-chat" type="submit">Join chat</button>
+    </form>
+    <div class="chatroom-container">
+        <div class="chatroom-header">Welcome to Chatroom</div>
+        <div class="messages">
+            <!--  <div class="message">Hey</div>  --> <!-- reci -->
+            <!-- <div class="message sent">Hi</div> --><!-- sent -->
+            <!-- <div>username: Hi</div> --><!-- sent -->
+        </div>
+        <div class="bottom-section">
+            <input type="text" placeholder="Type a message" id="message-input" />
+            <button id="send-button"><i class="fa-solid fa-message fa-lg" style="color: #7c8c95;"></i> Send</button>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
